@@ -4,7 +4,7 @@ import random
 import re
 import asyncio
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer,BitsAndBytesConfig
 from langchain_core.output_parsers import ResponseSchema, StructuredOutputParser
 
 
@@ -13,13 +13,19 @@ from langchain_core.output_parsers import ResponseSchema, StructuredOutputParser
 
 MODEL_NAME = "mistralai/Mistral-Nemo-Instruct-2407"
 
+quant_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_compute_dtype=torch.float16,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True
+)
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME, 
+    quantization_config=quant_config,
     device_map="auto"
 )
-
 
 # ---------------------SCHEMAS---------------------------
 
