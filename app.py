@@ -172,8 +172,8 @@ job_roles = [
 
 # ----------------- STEP 1: INTERVIEW SETUP -----------------
 if not st.session_state.session_id:
-    st.title("🤖 Next Round")
-    st.write("Next Round is a AI Interview Coach to help you Sharpen your skills with AI-driven technical mock interviews.")
+    st.title("🤖 AI Interview Coach")
+    st.write("AI Interview Coach helps you Sharpen your skills with AI-driven technical mock interviews.")
 
     with st.container():
         st.markdown('<div class="glass-card">', unsafe_allow_html=True)
