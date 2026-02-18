@@ -3,7 +3,7 @@ import requests
 import time
 
 # ----------------- CONFIG -----------------
-API_URL = "https://disposed-thomasine-unparching.ngrok-free.dev/" 
+API_URL = "https://YOUR_NGROK_URL" 
 
 # ----------------- PAGE SETUP -----------------
 st.set_page_config(page_title="AI Interview Coach", layout="wide", initial_sidebar_state="collapsed")
