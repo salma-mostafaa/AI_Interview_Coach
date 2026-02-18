@@ -26,14 +26,14 @@
 
 ## Technologies Used 🛠️
 
-- 🐍 Python
-- 🌟 Streamlit (Frontend & Deployment)
-- ⚡ FastAPI (Backend API and evaluation)
-- 🤖 PyTorch & Transformers (LLM inference)
-- 🔗 LangChain (Chains for structured evaluation)
-- 🧩 Pydantic (Data validation)
-- 🐙 Git + GitHub (Version control)
-- ☁️ Streamlit Cloud (Deployment)
+- Python
+- Streamlit (Frontend & Deployment)
+- FastAPI (Backend API and evaluation)
+- PyTorch & Transformers (LLM inference)
+- LangChain (Chains for structured evaluation)
+- Pydantic (Data validation)
+- Git + GitHub (Version control)
+- Streamlit Cloud (Deployment)
 
 ---
 
@@ -42,11 +42,11 @@
 ```text
 AI-Interview-Coach/
 │
-├── app.py                 # Streamlit frontend application 🖥️
+├── app.py                 # Streamlit frontend application 
 ├── backend/
-│   └── main.ipynb         # Notebook for backend logic and LLM evaluation routes  🤖
-├── requirements.txt       # Python dependencies 📦
-└── README.md              # This file 📖
+│   └── main.ipynb         # Notebook for backend logic and LLM evaluation routes  
+├── requirements.txt       # Python dependencies 
+└── README.md              # This file 
 
 
 ```
@@ -103,3 +103,4 @@ The project is deployed using **Streamlit Cloud**:
 - **Frontend** : `app.py` is the Streamlit interface that interacts with the backend and displays questions, collects answers, and shows evaluation results. 🖥️
 - **Environment Variables**: Do not include API keys or tokens in the repo; store them securely.🔒
 - **Hardware Requirements**: Large LLM models may require GPU. Streamlit Cloud may use CPU, which can make responses slower. 🖥️
+
