@@ -1,6 +1,7 @@
-langchain
-langchain-core
-transformers
-bitsandbytes 
-torch 
+streamlit==1.25.0
+langchain-core==0.1.17
+transformers==4.34.0
+bitsandbytes
+torch==2.1.0
 accelerate
+requests
