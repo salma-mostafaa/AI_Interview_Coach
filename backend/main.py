@@ -5,7 +5,7 @@ import re
 import asyncio
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer,BitsAndBytesConfig
-from langchain_core.output_parsers import ResponseSchema, StructuredOutputParser
+from langchain.output_parsers import ResponseSchema, StructuredOutputParser
 
 
 # ---------------------MODEL_CONFIG---------------------------
