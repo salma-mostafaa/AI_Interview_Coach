@@ -1,9 +1,7 @@
 import streamlit as st
 import requests
 import time
-
-# ----------------- CONFIG -----------------
-API_URL = "https://YOUR_NGROK_URL" 
+from backend.main import start_interview, submit_answer, evaluate, summary
 
 # ----------------- PAGE SETUP -----------------
 st.set_page_config(page_title="AI Interview Coach", layout="wide", initial_sidebar_state="collapsed")
