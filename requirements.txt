@@ -1,0 +1,10 @@
+langchain 
+langchain-community
+langchain-core
+transformers 
+bitsandbytes
+torch
+accelerate
+fastapi
+uvicorn
+pyngrok
