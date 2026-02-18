@@ -1,6 +1,12 @@
-streamlit==1.25.0
-langchain==0.1.174  # latest stable version
-transformers==4.34.0
-torch==2.1.0
+streamlit
+langchain
+langchain-community
+langchain-core
+transformers
+bitsandbytes
+torch
 accelerate
 requests
+fastapi 
+uvicorn 
+pyngrok
