@@ -1,4 +1,4 @@
-# AI Interview Coach 🚀🤖
+# AI Interview Coach 
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-green)
@@ -8,32 +8,32 @@
 
 ---
 
-## Features ✨
+## Features 
 
-- **Automatic Question Generation** 🧠  
+- **Automatic Question Generation**   
   Generates interview questions based on the selected job role.
 
-- **AI Answer Evaluation** 📊  
+- **AI Answer Evaluation** 
   Uses reasoning chains to analyze user answers.
 
-- **Structured Feedback Output** 🗂️  
+- **Structured Feedback Output** 
   - Score (0–10)  
   - Constructive feedback  
   - Ideal / refined answer  
-  - Suggestions for improvement 🔧  
+  - Suggestions for improvement   
 
-- **Final Interview Summary** 📋  
+- **Final Interview Summary**  
   Overall score, strengths, weaknesses, and final advice.
 
-- **User-Friendly Interface** 🖥️  
+- **User-Friendly Interface**   
   Built with Streamlit for smooth interaction.
 
-- **Powerful Backend** ⚙️  
+- **Powerful Backend** 
   FastAPI-based backend handling all LLM logic and evaluation.
 
 ---
 
-## Technologies Used 🛠️
+## Technologies Used 
 
 - Python  
 - Streamlit (Frontend UI)
@@ -46,7 +46,7 @@
 
 ---
 
-## Project Structure 📂
+## Project Structure 
 
 ```text
 AI-Interview-Coach/
@@ -59,7 +59,7 @@ AI-Interview-Coach/
 
 ```
 ---
-## Architecture Overview 🏗️
+## Architecture Overview 
 
 This project uses a **hybrid architecture** to efficiently support heavy AI models while keeping the frontend lightweight and responsive.
 
@@ -69,7 +69,7 @@ This project uses a **hybrid architecture** to efficiently support heavy AI mode
 - **ngrok** exposes the local backend as a secure public HTTPS API.
 - The **Streamlit frontend** communicates with the backend using the ngrok URL.
 
-### Request Flow 🔁
+### Request Flow 
 
 1. The user interacts with the Streamlit UI.
 2. Streamlit sends requests to the public ngrok API URL.
@@ -80,28 +80,28 @@ This project uses a **hybrid architecture** to efficiently support heavy AI mode
 
 ---
 
-## How It Works 🧩
+## How It Works 
 
-### Question Generation 🤔
+### Question Generation 
 The backend generates interview questions based on the selected job role using AI models.
 
-### Answer Submission 📝
+### Answer Submission 
 Users submit their answers through the Streamlit frontend.
 
-### Evaluation 📊
+### Evaluation 
 Each answer is evaluated using LLM reasoning chains to produce:
 
-- **Score (0–10)** 🏆  
-- **Constructive feedback** ✍️  
-- **Ideal / refined answer** 💯  
-- **Suggestions for improvement** 🔧  
+- **Score (0–10)** 
+- **Constructive feedback**   
+- **Ideal / refined answer** 
+- **Suggestions for improvement** 
 
-### Summary 📋
+### Summary 
 After completing the interview, the backend generates a final summary including overall score, strengths, weaknesses, and final advice.
 
 ---
 
-## Getting Started 🚀
+## Getting Started 
 
 ### 1️⃣ Clone the repository
 ```bash
@@ -149,28 +149,28 @@ streamlit run app.py
 * The API_URL in app.py must be updated whenever ngrok restarts.
 ---
 
-## How It Works 🧩
+## How It Works 
 
-1. **Question Generation**: The backend (`backend/main.ipynb`) generates interview questions for a selected job role using AI. 🤔
-2. **Answer Submission**: Users submit answers through the Streamlit frontend (`app.py`), which sends them to the backend. 📝
-3. **Evaluation**: The backend evaluates each answer using LLM reasoning chains and structured output parsing to provide: 📊
-   - Score (0–10) 🏆
-   - Feedback (constructive critique) ✍️
-   - Refined/ideal answer 💯
-   - Suggestions for improvement 🔧
-4. **Summary**: Once all answers are submitted, the backend generates a portrait summary with overall score, strengths, weaknesses, and final advice. The frontend displays this to the user. 📋
+1. **Question Generation**: The backend (`backend/main.ipynb`) generates interview questions for a selected job role using AI. 
+2. **Answer Submission**: Users submit answers through the Streamlit frontend (`app.py`), which sends them to the backend. 
+3. **Evaluation**: The backend evaluates each answer using LLM reasoning chains and structured output parsing to provide: 
+   - Score (0–10) 
+   - Feedback (constructive critique) 
+   - Refined/ideal answer 
+   - Suggestions for improvement 
+4. **Summary**: Once all answers are submitted, the backend generates a portrait summary with overall score, strengths, weaknesses, and final advice. The frontend displays this to the user. 
 
 ---
 
-## Notes ⚠️
+## Notes 
 
 - **Backend**: `backend/main.ipynb` contains all FastAPI routes, LLM inference logic, and evaluation pipeline
-- **Frontend** : `app.py` is responsible only for the UI and communication with the backend. 🖥️
-- **Secuirty**: Do not commit API keys or tokens to the repository.🔒
-- **Hardware Requirements**: Large LLM models may require GPU. Running large LLMs on CPU may result in slower response times. 🖥️
+- **Frontend** : `app.py` is responsible only for the UI and communication with the backend. 
+- **Secuirty**: Do not commit API keys or tokens to the repository.
+- **Hardware Requirements**: Large LLM models may require GPU. Running large LLMs on CPU may result in slower response times. 
 
 ---
-## Future Improvements 🔮
+## Future Improvements 
 
 * Dockerized backend deployment
 * Persistent backend hosting (no ngrok dependency)
